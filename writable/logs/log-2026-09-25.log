@@ -1,0 +1,46 @@
+ERROR - 2026-09-25 20:24:08 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#5 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists()
+#6 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Commands/Database/Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/CLI/SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::{closure:CodeIgniter\Commands\Database\Migrate::run():88}()
+#9 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Commands/Database/Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked()
+#10 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Migrate->run()
+#11 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#12 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#13 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#14 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/spark(87): CodeIgniter\Boot::bootSpark()
+#15 {main}
+ERROR - 2026-09-25 20:24:47 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
+#4 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
+#5 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
+#6 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
+#7 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+CRITICAL - 2026-09-25 20:24:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+[Method: CLI, Route: db:seed/LivreSeeder]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/Database.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
+ 4 SYSTEMPATH/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
+ 5 SYSTEMPATH/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
+ 6 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
+ 7 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 8 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 9 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+10 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
