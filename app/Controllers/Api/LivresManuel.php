@@ -17,7 +17,7 @@ class LivresManuel extends BaseController
 
         // TODO 1 : si le livre n'existe pas, renvoyer un 404
         //          avec un corps JSON {'erreur': 'Livre ... introuvable'}.
-        //          Indice : $this->response->setStatusCode(...)->setJSON(...)
+        //          Idice : $this->response->setStatusCode(...)->setJSON(...)n
 
         // Si le livre n'existe pas 
         if ($livre == null) {

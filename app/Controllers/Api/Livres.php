@@ -26,6 +26,13 @@ class Livres extends ResourceController
     {
         // TODO : renvoyer les livres (200) au format du contrat :
         //        {"donnees": [ ...livres... ]}
+        $livres = $modelName->findAll();
+        
+        $reponse = [
+            'donnees' => $livres
+        ];
+
+        return $this->response->setStatusCode(200)->setJSON($reponse);
         // Bonus : pagination avec ?page=2&par_page=10, et les clés page, par_page, total.
     }
 
