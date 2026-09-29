@@ -26,7 +26,7 @@ class Livres extends ResourceController
     {
         // TODO : renvoyer les livres (200) au format du contrat :
         //        {"donnees": [ ...livres... ]}
-        $livres = $modelName->findAll();
+        $livres = $this->model->findAll();
         
         $reponse = [
             'donnees' => $livres

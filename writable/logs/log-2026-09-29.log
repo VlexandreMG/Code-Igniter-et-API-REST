@@ -77,3 +77,126 @@ in APPPATH/Controllers/Api/Livres.php on line 29.
  6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
  7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
  8 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S5/MrRojo/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-09-29 05:03:46 --> ErrorException: Undefined variable $modelName
+[Method: GET, Route: api/livres]
+in APPPATH/Controllers/Api/Livres.php on line 29.
+ 1 APPPATH/Controllers/Api/Livres.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Api\Livres->index()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S5/MrRojo/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-09-29 05:04:41 --> Error: Call to a member function findAll() on string
+[Method: GET, Route: api/livres]
+in APPPATH/Controllers/Api/Livres.php on line 29.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Api\Livres->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S5/MrRojo/codeigniter4-framework-b3359be/public/index.php')
+ERROR - 2026-09-29 05:06:42 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/app/Controllers/Api/Livres.php(29): CodeIgniter\BaseModel->findAll()
+#7 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/CodeIgniter.php(951): App\Controllers\Api\Livres->index()
+#8 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-09-29 05:06:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+[Method: GET, Route: api/livres]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/Api/Livres.php(29): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Api\Livres->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S5/MrRojo/codeigniter4-framework-b3359be/public/index.php')
+ERROR - 2026-09-29 05:08:53 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/app/Controllers/Api/Livres.php(29): CodeIgniter\BaseModel->findAll()
+#7 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/CodeIgniter.php(951): App\Controllers\Api\Livres->index()
+#8 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-09-29 05:08:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+[Method: GET, Route: api/livres]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/Api/Livres.php(29): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Api\Livres->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S5/MrRojo/codeigniter4-framework-b3359be/public/index.php')
+ERROR - 2026-09-29 05:15:04 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/app/Controllers/Api/Livres.php(29): CodeIgniter\BaseModel->findAll()
+#7 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/CodeIgniter.php(951): App\Controllers\Api\Livres->index()
+#8 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/balou/S5/MrRojo/codeigniter4-framework-b3359be/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-09-29 05:15:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+[Method: GET, Route: api/livres]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/Api/Livres.php(29): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Api\Livres->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S5/MrRojo/codeigniter4-framework-b3359be/public/index.php')
